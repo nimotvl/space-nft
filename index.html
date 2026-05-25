@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CosmicGallery - Web3 Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#000022;color:#e2e8f0;font-family:Inter,sans-serif;min-height:100vh}
+.hd{background:rgba(0,0,0,.85);padding:16px 32px;display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid #8b5cf6}
+.logo{font-size:26px;font-weight:700;color:#8b5cf6;text-shadow:0 0 20px #8b5cf6}
+.wb{background:#8b5cf6;color:#000;border:none;padding:12px 28px;border-radius:10px;font-weight:700;cursor:pointer;font-size:15px;transition:.3s}
+.wb:hover{background:#f59e0b;box-shadow:0 0 20px #f59e0b}
+.main{max-width:1200px;margin:0 auto;padding:32px}
+.hero{text-align:center;padding:48px 0}
+.hero h1{font-size:52px;color:#8b5cf6;margin-bottom:12px;text-shadow:0 0 40px #8b5cf6}
+.hero p{color:#94a3b8;font-size:18px;max-width:640px;margin:0 auto;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin:32px 0}
+.card{background:rgba(0,0,0,.6);border:1px solid #3b82f644;border-radius:16px;padding:28px;transition:.3s;backdrop-filter:blur(10px)}
+.card:hover{border-color:#8b5cf6;box-shadow:0 0 40px #8b5cf633;transform:translateY(-4px)}
+.card h3{color:#3b82f6;margin-bottom:12px;font-size:13px;text-transform:uppercase;letter-spacing:3px}
+.card .v{font-size:36px;font-weight:700;margin-bottom:8px;color:#fff}
+.card .s{color:#64748b;font-size:14px}
+.tc{background:linear-gradient(135deg,#000022,#3b82f622);border:2px solid #8b5cf644}
+.txs{margin:40px 0}.txs h2{color:#8b5cf6;margin-bottom:20px;font-size:22px}
+.tx{display:grid;grid-template-columns:1fr 2fr 1fr;padding:16px 20px;border-bottom:1px solid #1e293b;transition:.2s}
+.tx:hover{background:rgba(255,255,255,.03)}
+.tx .t{color:#3b82f6}.tx .a{color:#f59e0b;font-weight:600;text-align:right}
+.ft{text-align:center;padding:40px;color:#475569;border-top:1px solid #1e293b;margin-top:48px;font-size:14px}
+@keyframes glow{0%,100%{text-shadow:0 0 10px #8b5cf6}50%{text-shadow:0 0 40px #8b5cf6,0 0 80px #8b5cf6}}
+.glow{animation:glow 3s infinite}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.grid .card{animation:fadeUp .6s ease forwards}
+.grid .card:nth-child(2){animation-delay:.1s}
+.grid .card:nth-child(3){animation-delay:.2s}
+.grid .card:nth-child(4){animation-delay:.3s}
+</style>
+</head>
+<body>
+<div class="hd">
+  <div class="logo">CosmicGallery</div>
+  <button class="wb">Connect Wallet</button>
+</div>
+<div class="main">
+  <div class="hero">
+    <h1 class="glow">CosmicGallery</h1>
+    <p>Decentralized finance platform powered by COSMO token. Stake, swap, and earn yields with cutting-edge DeFi protocol.</p>
+  </div>
+  <div class="grid">
+    <div class="card tc"><h3>Token Price</h3><div class="v">$1.89</div><div class="s">COSMO / USDC</div></div>
+    <div class="card"><h3>Staking APY</h3><div class="v" style="color:#f59e0b">89%</div><div class="s">Annual Percentage Yield</div></div>
+    <div class="card"><h3>Your Balance</h3><div class="v">5,231 COSMO</div><div class="s">Available to stake</div></div>
+    <div class="card"><h3>Total Value Locked</h3><div class="v" style="color:#3b82f6">$118,639.08</div><div class="s">Across all pools</div></div>
+  </div>
+  <div class="txs">
+    <h2>Recent Transactions</h2>
+    <div class="tx"><span class="t">Stake</span><span>1,250 COSMO - Staking Pool</span><span class="a">+89%</span></div>
+    <div class="tx"><span class="t">Swap</span><span>0.5 ETH - 2,340 COSMO</span><span class="a">Confirmed</span></div>
+    <div class="tx"><span class="t">Claim Rewards</span><span>89 COSMO earned</span><span class="a">+89 COSMO</span></div>
+    <div class="tx"><span class="t">Add Liquidity</span><span>500 COSMO + 0.2 ETH</span><span class="a">Completed</span></div>
+    <div class="tx"><span class="t">Transfer</span><span>10,000 COSMO to 0x8f3a...</span><span class="a">Success</span></div>
+    <div class="tx"><span class="t">Unstake</span><span>2,000 COSMO from Pool</span><span class="a">Pending</span></div>
+  </div>
+</div>
+<div class="ft">CosmicGallery - 2026 - Built with Next.js + Tailwind CSS - Powered by Web3</div>
+</body>
+</html>
