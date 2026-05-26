@@ -1,0 +1,12 @@
+{
+  "name": "space-nft",
+  "version": "1.0.0",
+  "description": "NFT marketplace for space-themed digital collectibles",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "author": "nimotvl",
+  "license": "MIT"
+}
